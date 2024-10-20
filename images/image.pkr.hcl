@@ -1,5 +1,15 @@
+packer {
+  required_plugins {
+    amazon = {
+      source  = "github.com/hashicorp/amazon"
+      version = "~> 1"
+    }
+  }
+}
+
+
 variable "aws_source_ami" {
-  default = "amzn2-ami-hvm-2.0.20210326.0-x86_64-gp2"
+  default = "amzn2-ami-kernel-5.10-hvm-2.0.20241014.0-x86_64-gp2"
 }
 
 variable "aws_instance_type" {
@@ -7,7 +17,7 @@ variable "aws_instance_type" {
 }
 
 variable "ami_name" {
-  default = "ami-stack-51"
+  default = "ami-stack-golden-image-01"
 }
 
 variable "component" {
@@ -17,8 +27,8 @@ variable "component" {
 
 variable "aws_accounts" {
   type = list(string)
-  # default= ["577701061234","560089993749"]
-  default= ["577701061234"]
+  # default= ["495599767034","560089993749"]
+  default= ["418272760069","495599767034"]
 }
 
 variable "ami_regions" {
