@@ -24,7 +24,7 @@ pipeline {
                     cd images && /usr/bin/packer init image.pkr.hcl
                 '''
               }
-
+        }
         stage('Packer AMI Build'){
              steps {
                  slackSend (color: '#FFFF00', message: "STARTING PACKER IMAGE BUILD: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
