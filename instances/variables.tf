@@ -18,14 +18,14 @@ variable "region"{
 }
 
 variable "vpc_id"{
-    default="vpc-0269ddbcb1b88dbda"
+    default="vpc-09e857bec0c88c606"
 }
 
 variable "subnets" {
   type = list(string)
   default=[
-    "subnet-04061c8bd163a910c",
-    "subnet-0a39cb75d8a4481bb",
+    "subnet-031e2f4af1fac5d14",
+    "subnet-089011be431b9f4a4",
    ]
 }
 
@@ -34,5 +34,5 @@ variable "PATH_TO_PUBLIC_KEY" {
 }
 
 variable "ami_name" {
-  default = "ami-stack-01"
+  default = "ami-stack-golden-image-01"
 }

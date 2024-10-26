@@ -96,7 +96,7 @@ data "aws_ami" "stack" {
 
   filter {
     name   = "name"
-    values = ["ami-stack-01"]
+    values = ["ami-stack-golden-image-01"]
   }
 }
 resource "aws_instance" "application_server" {
