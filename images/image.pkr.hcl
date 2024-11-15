@@ -9,15 +9,15 @@ packer {
 
 
 variable "aws_source_ami" {
-  default = "amzn2-ami-kernel-5.10-hvm-2.0.20241014.0-x86_64-gp2"
+  default = "amzn2-ami-ecs-inf-hvm-2.0.20241003-x86_64-ebs"
 }
 
 variable "aws_instance_type" {
-  default = "t2.small"
+  default = "c5.4xlarge"
 }
 
 variable "ami_name" {
-  default = "ami-stack-golden-image-01"
+  default = "ami-stack-golden-image-01_ECS"
 }
 
 variable "component" {
@@ -92,3 +92,4 @@ build {
     script = "../scripts/setup.sh"
   }
 }
+
