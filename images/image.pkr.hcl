@@ -9,16 +9,15 @@ packer {
 
 
 variable "aws_source_ami" {
-#default = "amzn2-ami-ecs-inf-hvm-2.0.20241003-x86_64-ebs"
-default = "amzn2-ami-ecs-hvm-2.0.20241108-x86_64-ebs"
+  default = "amzn2-ami-ecs-hvm-2.0.20241108-x86_64-ebs"
 }
 
 variable "aws_instance_type" {
-  default = "c5.4xlarge"
+  default = "c4.large"
 }
 
 variable "ami_name" {
-  default = "ami-stack-golden-image-01_ECS2"
+  default = "ami-stack-golden-image-01_ECS3"
 }
 
 variable "component" {
