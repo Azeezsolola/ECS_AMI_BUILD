@@ -7,7 +7,7 @@ resource "aws_inspector_resource_group" "stack_res" {
 }
 
 resource "aws_inspector_assessment_target" "assessment" {
-  name               = "Hardening Assessment1"
+  name               = "Hardening Assessment2"
   resource_group_arn = aws_inspector_resource_group.stack_res.arn
 }
 
