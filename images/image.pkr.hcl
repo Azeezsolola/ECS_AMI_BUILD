@@ -9,7 +9,8 @@ packer {
 
 
 variable "aws_source_ami" {
-  default = "amzn2-ami-ecs-inf-hvm-2.0.20241003-x86_64-ebs"
+#default = "amzn2-ami-ecs-inf-hvm-2.0.20241003-x86_64-ebs"
+default = "ami-0f65981e8ccb90000"
 }
 
 variable "aws_instance_type" {
