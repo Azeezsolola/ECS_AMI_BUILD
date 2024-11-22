@@ -18,7 +18,7 @@ variable "aws_instance_type" {
 }
 
 variable "ami_name" {
-  default = "ami-stack-golden-image-01_ECS"
+  default = "ami-stack-golden-image-01_ECS2"
 }
 
 variable "component" {
