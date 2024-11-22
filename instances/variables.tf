@@ -34,5 +34,5 @@ variable "PATH_TO_PUBLIC_KEY" {
 }
 
 variable "ami_name" {
-  default = "ami-stack-golden-image-01_ECS3"
+  default = "ami-stack-golden-image-01_ECS4"
 }
